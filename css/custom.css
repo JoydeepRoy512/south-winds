@@ -384,14 +384,14 @@ a.p-btn:hover {
 .about-left img {
   padding: 0.5rem 0;
   width: 100%;
-  height: auto;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .about-mid img {
   padding: 0.5rem 0;
   width: 100%;
-  height: auto;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -573,6 +573,7 @@ a.p-btn:hover {
   padding-top: 1rem;
 }
 .img-height-min{
+  width: 100%;
   height: 250px;
   object-fit: cover;
 }
@@ -583,6 +584,11 @@ a.p-btn:hover {
 .min-height{
   height: 120px;
   object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  .min-height{
+    height: 200px;
+  }
 }
 @media screen and (max-width: 480px) {
   .gallery .padtop {
@@ -666,7 +672,7 @@ a.p-btn:hover {
   background-attachment: fixed;
   background-size: cover ;
   background-position: center;
-  background-image: url('../images/slider_img_bg.png');
+  background-image: url('../images/overall/Building-min.jpg');
   -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.241);
           box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.241);
   background-repeat: no-repeat;

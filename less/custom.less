@@ -21,10 +21,6 @@
 
 .padtop {
     padding-top: 100px;
-
-    @media screen and (max-width:480px) {
-        padding-top: 44px;
-    }
 }
 
 p {
@@ -33,10 +29,6 @@ p {
 
 .padbot {
     padding-bottom: 60px;
-
-    @media screen and (max-width:480px) {
-        padding-bottom: 20px;
-    }
 }
 
 .main-nav {
@@ -101,11 +93,6 @@ p {
                         border-radius: 50%;
                         position: relative;
                         margin-right: 10px;
-                        transition: 0.5s all;
-                        &:hover{
-                            background-color: #e7a24d;
-                            transition: 0.5s all;
-                        }
 
                         i {
                             font-size: 20px;
@@ -122,10 +109,6 @@ p {
                         a {
                             text-decoration: none;
                             color: #fff;
-
-                            @media screen and (max-width:768px) {
-                                font-size: 0.7rem;
-                            }
                         }
                     }
                 }
@@ -175,14 +158,6 @@ a.p-btn {
     padding: 0.7rem 1rem;
     margin-right: 1.5rem;
     font-weight: bold;
-    transition: all 0.7s;
-&:hover{
-    background-color: #dea764;
-    transition: all 0.3s;
-}
-    @media screen and (max-width:768px) {
-        margin-right: 0px;
-    }
 }
 
 
@@ -198,21 +173,6 @@ a.p-btn {
     background-position: center;
     background-repeat: no-repeat;
 
-    .button-container {
-        @media screen and (max-width:768px) {
-            text-align: center;
-        }
-
-    }
-a,button{
-    transition: all 0.5s;
-    &:hover{
-        background-color: #e7a24d !important;
-        transition: all 0.5s;
-    }
-
-}
-
     .banner-outer {
         width: 100%;
         height: 100vh;
@@ -226,10 +186,6 @@ a,button{
             height: 100vh;
             width: 100%;
 
-            @media screen and (max-width:767px) {
-                height: 80vh;
-            }
-
             .banner-left-inner {
                 position: absolute;
                 z-index: 3;
@@ -237,17 +193,11 @@ a,button{
                 top: 50%;
                 // -webkit-transform: translate(-50%, -50%);
                 transform: translate(0, -50%);
-              
 
                 h1 {
                     color: #fff;
                     font-size: 4rem;
                     font-family: 'Frank Ruhl Libre', serif;
-
-                    @media screen and (max-width:768px) {
-                        text-align: center;
-                    }
-
 
                     span {
                         color: var(--primary-color);
@@ -255,37 +205,20 @@ a,button{
                     }
                 }
 
-                h1 {
-                    @media screen and (max-width:768px) {
-                        font-size: 3.1rem;
-                    }
-                }
-
                 p {
                     width: 100%;
                     color: #fff;
                     margin-bottom: 2rem;
-
-                    @media screen and (max-width:767px) {
-                        margin-bottom: 0px;
-                        text-align: center;
-                    }
-
                 }
 
                 a {
                     text-decoration: none;
-                    font-size: 16px;
                     display: inline-block;
                     color: #fff;
                     background: var(--primary-color);
                     padding: 1rem 1.5rem;
                     font-weight: bold;
                     margin-right: 1.5rem;
-
-                    @media screen and (max-width:768px) {
-                        margin-right: 0px;
-                    }
                 }
             }
         }
@@ -300,33 +233,24 @@ a,button{
                 /* left: 50%; */
                 right: 0% !important;
                 top: 57%;
-                left: 40%;
                 width: 60%;
                 // -webkit-transform: translate(-50%, -50%);
                 transform: translate(0, -50%);
 
-                @media screen and (max-width:768px) {
-                    left: 0;
-                }
-
                 form {
                     padding: 1.5rem;
-                    border: none;
-                    border-radius: 0px;
+                    border: 2px solid #fff;
+                    border-radius: 6px;
                     background: linear-gradient(180deg, #0000008d, #0000003d);
-
-                    .callback-btn {
+                    .callback-btn{
                         width: 100%;
                         margin: 0 auto !important;
-
+                        
                     }
-
                     .form-group {
                         width: 100% !important;
                         margin-bottom: 0.5rem;
-
-                        input,
-                        textarea {
+                        input, textarea{
                             color: #fff;
                         }
 
@@ -338,35 +262,27 @@ a,button{
                             border-bottom: 1px solid #fff;
                             caret-color: var(--primary-color);
                             outline: none;
-
-                            &::placeholder {
+                            &::placeholder{
                                 color: #fff !important;
                             }
-
-                            option {
+                            option{
                                 color: #000 !important;
                             }
-
                             &:focus {
                                 border: none;
                                 box-shadow: none;
                                 border-bottom: 1px solid var(--primary-color);
                             }
-                        }
-
-                        button {
+                        }   
+                        
+                        button{
                             padding: 0.5rem 1rem;
                             background: var(--primary-color);
                             border: none;
                             color: #fff;
                             font-weight: bold;
                             display: inline-block;
-                            margin-top: 1rem;
-                            width: 100%;
-
-                            @media screen and (max-width:480px) {
-                                width: 80%;
-                            }
+                        margin-top: 1rem;
                         }
                     }
                 }
@@ -382,137 +298,81 @@ a,button{
 .about {
     width: 100%;
 
-
-    .button-container {
-        text-align: center;
-        padding: 20px 0px;
-
-        @media screen and (max-width:768px) {
-            text-align: center;
-        }
-    }
-
-    h3 {
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         font-family: 'Frank Ruhl Libre', serif;
+    }
 
-        @media screen and(max-width:768px) {
-            font-size: 1.7rem;
+    .about-left {
+        img {
+            padding: 0.5rem 0;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 
-    h2 {
-        font-size: 3rem;
-        font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
+    .about-mid {
+        img {
+            padding: 0.5rem 0;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 
-}
-
-.about-left {
-    img {
-        padding: 0.5rem 0;
+    .about-right {
         width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
 
-.about-mid {
-    img {
-        padding: 0.5rem 0;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-
-        @media screen and (max-width:480px) {
-            height: 400px;
-        }
-    }
-}
-
-.about-right {
-    width: 100%;
-
-    .about-right-heading {
-        h2 {
-            font-size: 3rem;
-            font-family: 'Frank Ruhl Libre', serif;
-
-            @media screen and (max-width:768px) {
-                font-size: 2.1rem;
+        .about-right-heading {
+            h3 {
+                font-size: 3rem;
+                font-family: 'Frank Ruhl Libre', serif;
             }
         }
-    }
 
-    .about-right-para {
-        width: 100%;
+        .about-right-para {
+            width: 100%;
 
-        p {
-            margin: 2rem 0;
-        }
+            p {
+                margin: 2rem 0;
+            }
 
-        ul {
-            position: relative;
-            padding-left: 0rem;
-
-            li {
-                list-style: none;
+            ul {
                 position: relative;
-                padding-left: 2rem;
+                padding-left: 0rem;
 
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: 0%;
-                    top: 0.8rem;
-                    height: 0.1rem;
-                    width: 1.5rem;
-                    background: var(--primary-color);
+                li {
+                    list-style: none;
+                    position: relative;
+                    padding-left: 2rem;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: 0%;
+                        top: 0.8rem;
+                        height: 0.1rem;
+                        width: 1.5rem;
+                        background: var(--primary-color);
+                    }
                 }
             }
         }
-    }
 
-    .about-carousel {
-        margin: 2rem 0;
+        .about-carousel {
+            margin: 2rem 0;
+        }
     }
 }
-
 
 // about
 
 // yt-video
 .yt-video {
     width: 100%;
-
-    h3 {
-        font-size: 2rem;
-        color: var(--primary-color);
-        font-family: 'Frank Ruhl Libre', serif;
-        text-align: center;
-        text-transform: uppercase;
-
-        @media screen and(max-width:768px) {
-            font-size: 1.7rem;
-        }
-    }
-
-    h2 {
-        font-size: 3rem;
-        font-family: 'Frank Ruhl Libre', serif;
-        text-align: center;
-        text-transform: capitalize;
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
-        }
-    }
 
     iframe {
         width: 100%;
@@ -526,37 +386,23 @@ a,button{
 .amenities {
     width: 100%;
 
-    h3 {
-        text-align: center;
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-        }
     }
 
-    h2 {
+    h3 {
         color: #000;
         font-size: 3rem;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
-        }
     }
 
     .amenities-carousel {
         .item {
             padding: 2rem;
             transition: all 300ms ease-in-out;
-
-            @media screen and (max-width:768px) {
-                background-color: black;
-                color: #fff;
-            }
 
             &:hover {
                 background: #000;
@@ -571,63 +417,36 @@ a,button{
                 .text {
                     p {
                         color: #fff;
-
                     }
                 }
             }
 
             .icon {
                 width: 100%;
-                text-align: center;
-
-                @media screen and(max-width:768px) {
-                    display: flex;
-                    justify-content: center;
-                }
 
                 i {
                     font-size: 6rem;
                     color: var(--primary-color);
-
                 }
             }
 
             .heading {
                 h4 {
                     margin: 1.5rem 0;
-                    text-align: center;
-
-                    @media screen and(max-width:768px) {
-                        text-align: center;
-                    }
                 }
             }
 
             .line {
                 display: block;
                 width: 4rem;
-                margin: auto;
                 height: 0.15rem;
                 background-color: var(--primary-color);
-
-                @media screen and(max-width:768px) {
-
-                    margin: 1rem auto;
-
-                }
             }
 
             .text {
                 p {
-                    margin: 1rem auto;
-                    width: 90%;
-                    text-align: center;
-
-                    @media screen and(max-width:768px) {
-                        text-align: center;
-                        margin: 1rem auto;
-                        width: 85%;
-                    }
+                    margin: 1rem 0;
+                    width: 85%;
                 }
             }
         }
@@ -640,40 +459,16 @@ a,button{
 .gallery {
     width: 100%;
 
-    .padtop {
-        padding-top: 1rem;
-
-        @media screen and (max-width:480px) {
-            padding-top: 0px;
-
-        }
-    }
-
-    img {
-        @media screen and (max-width:480px) {
-            margin: 5px 0px;
-        }
-    }
-
-    h3 {
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-
-        }
     }
 
-    h2 {
+    h3 {
         font-size: 3rem;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
-        }
     }
 
     .gallery-1,
@@ -681,9 +476,8 @@ a,button{
     .gallery-3,
     .gallery-4,
     .gallery-5 {
+        // a{
         position: relative;
-
-
 
         .content {
             transition: all 300ms ease-in-out;
@@ -692,23 +486,13 @@ a,button{
             bottom: 0;
             opacity: 0;
 
-            @media screen and (max-width:768px) {
-                opacity: 1;
-                position: absolute;
-                bottom: 0px;
-            }
-
             h4 {
                 color: var(--primary-color);
             }
         }
 
-
-
+        // }
     }
-
-
-
 }
 
 .gallery-1:hover .content,
@@ -726,41 +510,18 @@ a,button{
 
 // floor plan
 .floor-plan {
-    height: 300px;
     width: 100%;
-    background-attachment: fixed;
-    background-size:cover ;
-    background-position: center;
-    background-image: url('../images/slider_img_bg.png');
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.241);
-    background-repeat: no-repeat;
-    .button-container {
-        padding: 20px 0px;
-
-        @media screen and (max-width:768px) {
-            padding: 0px;
-        }
-    }
 
     h2 {
         color: var(--primary-color);
         text-transform: uppercase;
         font-size: 2rem;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-        }
     }
 
     h3 {
         font-size: 3rem;
         font-family: 'Frank Ruhl Libre', serif;
-        color: rgb(255, 255, 255);
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
-        }
     }
 }
 
@@ -768,24 +529,16 @@ a,button{
 
 // feedback
 .feedback {
-    h3 {
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-        }
     }
 
-    h2 {
+    h3 {
         font-size: 3rem;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 2.1rem;
-        }
     }
 
     .feedback-carousel {
@@ -841,15 +594,11 @@ a,button{
 .location {
     width: 100%;
 
-    h3 {
+    h2 {
         font-size: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
         font-family: 'Frank Ruhl Libre', serif;
-
-        @media screen and (max-width:768px) {
-            font-size: 1.7rem;
-        }
     }
 
     iframe {
@@ -866,12 +615,6 @@ a,button{
     height: auto;
     background: #2b2d42;
 
-    .footer-card {
-        @media screen and (max-width:768px) {
-            text-align: center;
-        }
-    }
-
     .footer-left {
         .contact {
             display: flex;
@@ -879,16 +622,11 @@ a,button{
             align-items: center;
             margin: 2rem 0;
 
-            @media screen and (max-width:768px) {
-                text-align: center;
-                justify-content: center;
-            }
-
             .contact-left {
                 position: relative;
-
-
-
+                background-color: var(--primary-color);
+                height: 3rem;
+                width: 3rem;
 
                 // border-radius: 50%;
                 i {
@@ -897,43 +635,15 @@ a,button{
                     top: 0.5rem;
                     font-size: 2rem;
                     color: #fff;
-                    background-color: #bc986b;
-                    padding: 5px;
-
-                    @media screen and (max-width:768px) {
-                        left: -1rem;
-                        top: 0rem;
-                        font-size: 1rem;
-                    }
-
-                    @media screen and (max-width:480px) {
-                        left: -1rem;
-                        top: 0rem;
-                        font-size: 2rem;
-                    }
                 }
             }
 
             .contact-right {
                 margin-left: 1.5rem;
 
-                @media screen and (max-width:768px) {
-                    margin-left: 0px;
-                }
-
                 p {
                     padding: 0px;
                     margin: 0px;
-
-                    @media screen and (max-width:768px) {
-                        font-size: calc(1vw + 7px);
-                    }
-
-
-                    @media screen and (max-width:480px) {
-                        font-size: 1.1rem;
-                    }
-
 
                     a {
                         text-decoration: none;
@@ -954,10 +664,6 @@ a,button{
                 color: #fff;
                 font-size: 2rem;
                 font-family: 'Frank Ruhl Libre', serif;
-
-                @media screen and (max-width:768px) {
-                    font-size: 1.5rem;
-                }
             }
 
             .line {
@@ -965,10 +671,6 @@ a,button{
                 width: 4rem;
                 height: 0.1rem;
                 background-color: var(--primary-color);
-
-                @media screen and (max-width:768px) {
-                    margin: auto;
-                }
             }
         }
 
@@ -976,16 +678,9 @@ a,button{
             padding: 1.2rem 0;
 
             p {
-                @media screen and (max-width:480px) {
-                    font-size: 1.1rem !important;
-                }
-
                 a {
                     text-decoration: none;
                     color: #fff;
-
-
-
 
                     &:hover {
                         color: var(--primary-color);
@@ -1000,10 +695,6 @@ a,button{
             color: #fff;
             font-size: 2rem;
             font-family: 'Frank Ruhl Libre', serif;
-
-            @media screen and (max-width:480px) {
-                font-size: 1.5rem;
-            }
         }
 
         .line {
@@ -1011,16 +702,11 @@ a,button{
             width: 4rem;
             height: 0.1rem;
             background-color: var(--primary-color);
-
-            @media screen and (max-width:768px) {
-                margin: auto;
-            }
         }
 
         p {
             color: #fff;
             padding: 1rem 0;
-            text-align: justify;
         }
     }
 
@@ -1032,97 +718,72 @@ a,button{
         color: #fff;
         padding: 1.5rem 0;
         border-top: 1px solid var(--primary-color);
-
-        @media screen and (max-width:768px) {
-            text-align: center;
-            justify-content: center;
-        }
     }
 }
-
 // footer
 
 // modal
-.modal {
+.modal{
     z-index: 9999999;
-
-    .modal-body {
-        label {
+    .modal-body{
+        label{
             display: none;
         }
-
-        input,
-        textarea {
+        input, textarea{
             border: none;
             border-radius: 0px;
             border-bottom: 1px solid var(--primary-color);
-
-            &:focus {
+            &:focus{
                 box-shadow: none;
             }
         }
-
-        button {
+        button{
             background: var(--primary-color);
             border: none;
             font-weight: bold;
-
-            &:focus {
+            &:focus{
                 box-shadow: none;
             }
         }
     }
 }
-
 // modal
 
 
 // responsive
 @media only screen and (max-width:426px) {
-    .navtop {
+    .navtop{
         display: none;
     }
-
-    .navbar {
-        background: var(--primary-color) !important;
+    .navbar{
+        background: var(--primary-color) !important; 
     }
-
-    .banner {
+    .banner{
         height: auto !important;
-        padding-top: 3rem;
-
-        .banner-outer {
+        .banner-outer{
             height: auto !important;
         }
-
-        h1 {
+        h1{
             font-size: 2.4rem !important;
         }
-
-        p {
+        p{
             text-align: justify;
         }
-
-        .banner-right {
+        .banner-right{
             height: 70vh !important;
-            padding: 50px 0px;
         }
-
-        .banner-left {
+        .banner-left{
             width: 85% !important;
             margin: 0 auto;
         }
-
-        .banner-left-inner {
+        .banner-left-inner{
             position: relative !important;
-
-            a {
+            a{
                 font-size: 0.5rem;
                 padding: 0.5rem 1rem !important;
             }
         }
-
-        .banner-right-inner {
+        .banner-right-inner{
             position: relative !important;
             width: 80% !important;
             top: 25% !important;
@@ -1130,5 +791,4 @@ a,button{
         }
     }
 }
-
 // responsive
