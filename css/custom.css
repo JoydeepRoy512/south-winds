@@ -206,6 +206,11 @@ a.p-btn:hover {
   width: 90%;
   font-family: 'Frank Ruhl Libre', serif;
 }
+@media only screen and (max-width: 426px) {
+  .banner .banner-outer .banner-left .banner-left-inner h1 {
+    width: 100%;
+  }
+}
 .banner .banner-outer .banner-left .banner-left-inner h1 span {
   color: #fff;
   display: block;
@@ -216,6 +221,11 @@ a.p-btn:hover {
   margin-bottom: 2rem;
   font-size: 1.3rem;
   line-height: 1.4;
+}
+@media only screen and (max-width: 426px) {
+  .banner .banner-outer .banner-left .banner-left-inner p {
+    width: 100%;
+  }
 }
 .banner .banner-outer .banner-left .banner-left-inner a {
   text-decoration: none;
@@ -693,6 +703,11 @@ a.p-btn:hover {
   background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/overall/Over-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 426px) {
+  .location .location-outer .card1 {
+    margin-bottom: 20px;
+  }
 }
 .location .location-outer .card1 .text p {
   font-size: 1.3rem;
@@ -1215,7 +1230,7 @@ a.p-btn:hover {
     display: none;
   }
   .navbar {
-    background: var(--primary-color) !important;
+    background: transparent !important;
   }
   .banner {
     height: auto !important;
