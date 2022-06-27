@@ -552,6 +552,7 @@ a.p-btn:hover {
   object-fit: cover;
 }
 .img-height {
+  width: 100%;
   height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -699,8 +700,8 @@ a.p-btn:hover {
   font-family: 'Frank Ruhl Libre', serif;
   height: 170px;
   opacity: 0.9;
-  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/overall/Over-min.jpg);
-  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/overall/Over-min.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/EM\ Bypass.jpg);
+  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/EM\ Bypass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -730,8 +731,8 @@ a.p-btn:hover {
           justify-content: center;
   color: #fff;
   font-family: 'Frank Ruhl Libre', serif;
-  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/overall/Over-min.jpg);
-  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/overall/Over-min.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/subhas.jpg);
+  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/subhas.jpg);
   height: 170px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -757,8 +758,8 @@ a.p-btn:hover {
           justify-content: center;
   color: #fff;
   font-family: 'Frank Ruhl Libre', serif;
-  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/overall/Over-min.jpg);
-  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/overall/Over-min.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(#00000063), color-stop(43%, #00000073)), url(../images/mandira.jpg);
+  background: linear-gradient(90deg, #00000063 0%, #00000073 43%), url(../images/mandira.jpg);
   height: 170px;
   background-repeat: no-repeat;
   background-size: cover;
